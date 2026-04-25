@@ -1,0 +1,586 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="row">
+    <div class="col-12">
+        <form method="get">
+
+            <div>
+                <label for="num1">Value 1</label>
+                <input type="text" name="num1" id="num1" class="form-control">
+            </div>
+
+            <div>
+                <label for="num2">Value 2</label>
+                <input type="text" name="num2" id="num2" class="form-control">
+            </div>
+
+            <div class="pt-4">
+                <button type="submit">Save</button>
+            </div>
+
+            output
+            <input type="text" value="{{output}}"
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html> -->
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GET Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 40px;
+        }
+
+        .container {
+            width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e6ffe6;
+            border-left: 5px solid green;
+        }
+
+        .nodata {
+            margin-top: 20px;
+            color: red;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h2>GET Method Form</h2>
+
+    <form method="get">
+        <label>Name:</label>
+        <input type="text" name="name">
+
+        <label>Age:</label>
+        <input type="number" name="age">
+
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if name and age %}
+        <div class="result">
+            <h3>Result:</h3>
+            <p>Name: {{ name }}</p>
+            <p>Age: {{ age }}</p>
+        </div>
+    {% else %}
+        <p class="nodata">No data submitted</p>
+    {% endif %}
+
+</div>
+
+</body>
+</html> -->
+
+<!-- <html lang="en">
+<head>
+    <title>Student Registration</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 40px;
+        }
+
+        .form-box {
+            width: 450px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #5a67d8;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e6fffa;
+            border-left: 5px solid green;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-box">
+    <h2>Student Registration Form</h2>
+
+    <form method="get">
+
+        <label>Name:</label>
+        <input type="text" name="name">
+
+        <label>Email:</label>
+        <input type="email" name="email">
+
+        <label>Mobile Number:</label>
+        <input type="text" name="phone">
+
+        <label>Gender:</label>
+        <select name="gender">
+            <option value="">Select</option>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob">
+
+        <label>Course:</label>
+        <select name="course">
+            <option>BCA</option>
+            <option>B.Tech</option>
+            <option>BBA</option>
+        </select>
+
+        <label>Address:</label>
+        <textarea name="address"></textarea>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    Output
+    {% if name and email %}
+    <div class="result">
+        <h3>Submitted Data:</h3>
+        <p>Name: {{ name }}</p>
+        <p>Email: {{ email }}</p>
+        <p>Phone: {{ phone }}</p>
+        <p>Gender: {{ gender }}</p>
+        <p>DOB: {{ dob }}</p>
+        <p>Course: {{ course }}</p>
+        <p>Address: {{ address }}</p>
+    </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Registration</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 40px;
+        }
+
+        .form-box {
+            width: 450px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #5a67d8;
+        }
+
+        .clear-btn {
+            background: red;
+        }
+
+        .clear-btn:hover {
+            background: darkred;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e6fffa;
+            border-left: 5px solid green;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-box">
+    <h2>Student Registration Form</h2>
+
+    <form method="get">
+
+        <label>Name:</label>
+        <input type="text" name="name" value="{{ name }}">
+
+        <label>Email:</label>
+        <input type="email" name="email" value="{{ email }}">
+
+        <label>Mobile Number:</label>
+        <input type="text" name="phone" value="{{ phone }}">
+
+        <label>Gender:</label>
+        <select name="gender">
+            <option value="">Select</option>
+            <option value="Male" {% if gender == "Male" %}selected{% endif %}>Male</option>
+            <option value="Female" {% if gender == "Female" %}selected{% endif %}>Female</option>
+        </select>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" value="{{ dob }}">
+
+        <label>Course:</label>
+        <select name="course">
+            <option value="BCA" {% if course == "BCA" %}selected{% endif %}>BCA</option>
+            <option value="B.Tech" {% if course == "B.Tech" %}selected{% endif %}>B.Tech</option>
+            <option value="BBA" {% if course == "BBA" %}selected{% endif %}>BBA</option>
+        </select>
+
+        <label>Address:</label>
+        <textarea name="address">{{ address }}</textarea>
+
+        <!-- Buttons -->
+        <!-- <button type="submit">Submit</button>
+<a href="/">
+    <button type="button" class="clear-btn">Clear</button>
+</a>
+    </form>
+
+     Output -->
+    <!-- {% if name and email %}
+    <div class="result">
+        <h3>Submitted Data:</h3>
+        <p>Name: {{ name }}</p>
+        <p>Email: {{ email }}</p>
+        <p>Phone: {{ phone }}</p>
+        <p>Gender: {{ gender }}</p>
+        <p>DOB: {{ dob }}</p>
+        <p>Course: {{ course }}</p>
+        <p>Address: {{ address }}</p>
+    </div>
+    {% endif %} -->
+
+<!-- </div>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Registration</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 40px;
+        }
+
+        .form-box {
+            width: 450px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #5a67d8;
+        }
+
+        .clear-btn {
+            background: red;
+        }
+
+        .clear-btn:hover {
+            background: darkred;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e6fffa;
+            border-left: 5px solid green;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-box">
+    <h2>Student Registration Form</h2>
+
+    <form method="post">
+        {% csrf_token %}
+
+        <label>Name:</label>
+        <input type="text" name="name" value="{{ name }}">
+
+        <label>Email:</label>
+        <input type="email" name="email" value="{{ email }}">
+
+        <label>Mobile Number:</label>
+        <input type="text" name="phone" value="{{ phone }}">
+
+        <label>Gender:</label>
+        <select name="gender">
+            <option value="">Select</option>
+            <option value="Male" {% if gender == "Male" %}selected{% endif %}>Male</option>
+            <option value="Female" {% if gender == "Female" %}selected{% endif %}>Female</option>
+        </select>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" value="{{ dob }}">
+
+        <label>Course:</label>
+        <select name="course">
+            <option value="BCA" {% if course == "BCA" %}selected{% endif %}>BCA</option>
+            <option value="B.Tech" {% if course == "B.Tech" %}selected{% endif %}>B.Tech</option>
+            <option value="BBA" {% if course == "BBA" %}selected{% endif %}>BBA</option>
+        </select>
+
+        <label>Address:</label>
+        <textarea name="address">{{ address }}</textarea>
+
+        <!-- Buttons -->
+        <button type="submit">Submit</button>
+<a href="/">
+    <button type="button" class="clear-btn">Clear</button>
+</a>
+    </form>
+
+    <!-- Output -->
+    {% if name and email %}
+    <div class="result">
+        <h3>Submitted Data:</h3>
+        <p>Name: {{ name }}</p>
+        <p>Email: {{ email }}</p>
+        <p>Phone: {{ phone }}</p>
+        <p>Gender: {{ gender }}</p>
+        <p>DOB: {{ dob }}</p>
+        <p>Course: {{ course }}</p>
+        <p>Address: {{ address }}</p>
+    </div>
+    {% endif %}
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
