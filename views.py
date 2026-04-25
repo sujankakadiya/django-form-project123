@@ -8,9 +8,6 @@ def aboutUs(request):
 
 
 
-
-
-
 def Form(request):
     name = request.POST.get("name")
     email = request.POST.get("email", "")
